@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { Container, Content, View } from 'native-base';
 
 export default class App extends Component {
   render() {
-    return (<View></View>);
+    return (
+      <Container>
+        <Content>
+          <View>
+          </View>
+        </Content>
+      </Container>
+    );
   }
 }
