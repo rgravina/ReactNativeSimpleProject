@@ -6,11 +6,27 @@ export default class Home extends Component {
     return (
       <View style={{
         flex: 1,
+        paddingTop: 24,
         flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: '#171521'
       }}>
+        <View style={{
+          flex: 1,
+          flexDirection: 'row'
+        }}>
+          <Text style={{
+            color: 'darkgray',
+            paddingLeft: 8
+          }}>°C</Text>
+          <Text style={{
+            color: 'darkgray',
+            paddingLeft: 4
+          }}>/</Text>
+          <Text style={{
+            color: 'darkgray',
+            paddingLeft: 4
+          }}>°F</Text>
+        </View>
       </View>
     );
   }
