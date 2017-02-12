@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from 'native-base';
+import { Text } from 'react-native';
 import { shallow } from 'enzyme';
 
 import Home from '../../src/components/Home';

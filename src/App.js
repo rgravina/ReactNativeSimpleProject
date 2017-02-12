@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Content, View } from 'native-base';
 import {Scene, Router} from 'react-native-router-flux';
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import { connect, Provider } from 'react-redux';
