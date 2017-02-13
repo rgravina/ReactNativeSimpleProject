@@ -10,4 +10,6 @@ describe('home', () => {
     expect(component.contains("°C")).toEqual(true);
     expect(component.contains("°F")).toEqual(true);
   });
+
+  xit('renders fahrenheit white when selected');
 });

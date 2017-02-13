@@ -9,15 +9,15 @@ export default class Home extends Component {
         flexDirection: 'row'
       }}>
         <Text style={{
-          color: 'darkgray',
-          paddingLeft: 8
+          color: this.props.fahrenheit ? 'darkgray' : 'white',
+          paddingLeft: 8,
         }}>°C</Text>
         <Text style={{
           color: 'darkgray',
           paddingLeft: 4
         }}>/</Text>
         <Text style={{
-          color: 'darkgray',
+          color: this.props.fahrenheit ? 'white' : 'darkgray',
           paddingLeft: 4
         }}>°F</Text>
       </View>
