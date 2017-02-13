@@ -11,5 +11,7 @@ describe('home', () => {
     expect(component.contains("°F")).toEqual(true);
   });
 
+  xit('renders celcius white when selected');
   xit('renders fahrenheit white when selected');
+  xit('calls onTemperateUnitChanged when unit is tapped.');
 });
