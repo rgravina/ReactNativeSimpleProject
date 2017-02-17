@@ -16,4 +16,6 @@ describe(TemperatureUnit, () => {
     expect(component.prop('style').color).toEqual('darkgray');
     expect(component.contains("°C")).toEqual(true);
   });
+
+  xit('calls handler when unit is tapped')
 });
