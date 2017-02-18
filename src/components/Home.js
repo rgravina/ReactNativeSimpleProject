@@ -16,7 +16,7 @@ export default class Home extends Component {
           flex: 1,
           flexDirection: 'row'
         }}>
-          <TemperatureUnitSelector />
+          <TemperatureUnitSelector fahrenheit={this.props.fahrenheit} />
         </View>
       </View>
     );
