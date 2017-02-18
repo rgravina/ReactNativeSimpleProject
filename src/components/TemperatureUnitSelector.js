@@ -6,8 +6,8 @@ import TemperatureUnit from './TemperatureUnit';
 export default (props) => {
   return (
     <View style={{flex: 1, flexDirection: 'row'}}>
-      <TemperatureUnit selected={!props.fahrenheit} text="°C"/>
-      <TemperatureUnit selected={props.fahrenheit === true} text="°F"/>
+      <TemperatureUnit onSelectUnit={props.onSelectUnit} selected={!props.fahrenheit} text="°C"/>
+      <TemperatureUnit onSelectUnit={props.onSelectUnit} selected={props.fahrenheit === true} text="°F"/>
     </View>
   );
 }

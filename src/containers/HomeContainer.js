@@ -5,4 +5,10 @@ const mapStateToProps = (state) => {
   return {fahrenheit: false}
 }
 
-export default connect(mapStateToProps)(Home);
+const mapDispatchToProps = (state) => {
+  return {
+    onSelectUnit: () => {}
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
