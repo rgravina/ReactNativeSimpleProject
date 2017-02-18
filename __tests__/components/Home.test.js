@@ -7,7 +7,8 @@ import TemperatureUnitSelector from '../../src/components/TemperatureUnitSelecto
 
 describe(Home, () => {
   it('renders TemperatureUnitSelector', () => {
-    const component = shallow(<Home fahrenheit={true}/>);
-    expect(component.contains(<TemperatureUnitSelector fahrenheit={true}/>)).toEqual(true);
+    const handler = () => {};
+    const component = shallow(<Home fahrenheit={true} onSelectUnit={handler}/>);
+    expect(component.contains(<TemperatureUnitSelector fahrenheit={true} onSelectUnit={handler}/>)).toEqual(true);
   });
 });
