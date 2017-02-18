@@ -6,7 +6,11 @@ import thunk from 'redux-thunk';
 
 import HomeContainer from './containers/HomeContainer';
 import routes from './redux/routes';
-const reducers = combineReducers({routes});
+import settings from './redux/settings';
+const reducers = combineReducers({
+  routes,
+  settings
+});
 const store = createStore(
   reducers,
   applyMiddleware(thunk)

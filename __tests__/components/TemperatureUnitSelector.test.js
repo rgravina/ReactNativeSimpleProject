@@ -9,7 +9,7 @@ describe(TemperatureUnitSelector, () => {
   it('renders component with teperature and unit selectors', () => {
     const handler = () => {};
     const component = shallow(<TemperatureUnitSelector onSelectUnit={handler}/>);
-    expect(component.contains(<TemperatureUnit onSelectUnit={handler} selected={true} text="°C"/>)).toEqual(true);
-    expect(component.contains(<TemperatureUnit onSelectUnit={handler} selected={false} text="°F"/>)).toEqual(true);
+    expect(component.contains(<TemperatureUnit onSelectUnit={handler} selected={true} text="°C" unit='c'/>)).toEqual(true);
+    expect(component.contains(<TemperatureUnit onSelectUnit={handler} selected={false} text="°F" unit='f'/>)).toEqual(true);
   });
 });
