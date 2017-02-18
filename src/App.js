@@ -4,7 +4,7 @@ import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import { connect, Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 
-import Home from './components/Home';
+import HomeContainer from './containers/HomeContainer';
 import routes from './redux/routes';
 const reducers = combineReducers({routes});
 const store = createStore(
@@ -19,7 +19,7 @@ export default class App extends Component {
       <Provider store={store}>
         <RouterWithRedux>
           <Scene key="root" hideNavBar={true}>
-            <Scene key="home" component={Home}/>
+            <Scene key="home" component={HomeContainer}/>
           </Scene>
         </RouterWithRedux>
       </Provider>

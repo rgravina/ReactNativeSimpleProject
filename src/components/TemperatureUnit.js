@@ -6,6 +6,6 @@ export default (props) => {
       <Text style={{
         color: props.selected ? 'white' : 'darkgray',
         paddingLeft: 8,
-      }}>{props.text}</Text>
+      }} onPress={props.onSelectUnit}>{props.text}</Text>
   );
 }

@@ -17,5 +17,15 @@ describe(TemperatureUnit, () => {
     expect(component.contains("°C")).toEqual(true);
   });
 
-  xit('calls handler when unit is tapped')
+  it('calls handler when unit is tapped', () => {
+    const handler = jest.fn();
+    const component = shallow(<TemperatureUnit
+      selected={false}
+      text="°C"
+      onSelectUnit={handler}
+    />);
+    const celcius = component.find(Text);
+    celcius.simulate('press');
+    expect(handler).toHaveBeenCalled();
+  })
 });
