@@ -8,7 +8,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onSelectUnit: (unit) => {dispatch({type: UPDATE_TEMPERATURE_UNIT, data: {fahrenheit: unit == 'f'}})}
+    onSelectUnit: (unit) => {dispatch({
+      type: UPDATE_TEMPERATURE_UNIT,
+      data: {fahrenheit: unit == 'f'}
+    })}
   }
 }
 
