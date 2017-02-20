@@ -5,7 +5,7 @@ import { shallow } from 'enzyme';
 import TemperatureUnitSelector from '../../src/components/TemperatureUnitSelector';
 import TemperatureUnit from '../../src/components/TemperatureUnit';
 
-describe(TemperatureUnitSelector, () => {
+describe('TemperatureUnitSelector', () => {
   it('renders component with teperature and unit selectors', () => {
     const handler = () => {};
     const component = shallow(<TemperatureUnitSelector onSelectUnit={handler}/>);

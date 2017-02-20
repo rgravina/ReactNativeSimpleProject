@@ -26,6 +26,7 @@
 	},
 	"jest": {
 		"preset": "react-native",
+		"verbose": true,
 		"testPathIgnorePatterns": [
 			"/node_modules/"
 		],
