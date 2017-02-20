@@ -22,10 +22,11 @@ describe(TemperatureUnit, () => {
     const component = shallow(<TemperatureUnit
       selected={false}
       text="°C"
+      unit='c'
       onSelectUnit={handler}
     />);
     const celcius = component.find(Text);
     celcius.simulate('press');
-    expect(handler).toHaveBeenCalled();
+    expect(handler).toHaveBeenCalledWith('c');
   })
 });
