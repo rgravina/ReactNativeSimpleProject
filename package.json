@@ -9,7 +9,7 @@
 	"dependencies": {
 		"native-base": "^2.0.5",
 		"react": "15.4.2",
-		"react-native": "^0.41.2",
+		"react-native": "0.41.2",
 		"react-native-router-flux": "^3.37.0",
 		"react-redux": "^5.0.2",
 		"redux": "^3.6.0",
@@ -27,7 +27,7 @@
 	"jest": {
 		"preset": "react-native",
 		"verbose": true,
-		 "setupTestFrameworkScriptFile": "./__tests__/support/setup.js",
+		"setupTestFrameworkScriptFile": "./__tests__/support/setup.js",
 		"testPathIgnorePatterns": [
 			"/node_modules/",
 			"__tests__/support/"
